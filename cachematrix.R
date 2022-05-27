@@ -4,6 +4,12 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
+        ## This function returns a list of four functions that will be associated to the input matrix x
+        #if y=CacheMatrix(x), then
+        #y$set sets the value of y to x
+        #y$get returns the value of x
+        #y$setinv saves the inverse of x into the cache
+        #y$getinv returns the inverse of x from the cache (if it's there)
         m <- NULL
         set <- function(y) {
                 x <<- y
@@ -16,7 +22,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
